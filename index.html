@@ -3,39 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/main.css">
-
+    <script src="js/slider.js"></script>
     <title>Slider</title>
 </head>
 <body>
-    <div class="slide_show-container">
-        <div class="slides">
-            <img src="slides/1.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/2.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/3.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/4.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/5.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/6.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/7.jpg" alt="" />
-        </div>
-        <div class="slides">
-            <img src="slides/8.jpg" alt="" />
-        </div>
-
-
-
-
+    <div id="slide_show-container">
+        <button class="left" onclick="slider.left();"><</button>
+         <div id="slider_show"></div>
+            <button class="right" onclick="slider.right();">></button>
     </div>
+
 </body>
 </html>

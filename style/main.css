@@ -11,4 +11,21 @@ body{
     position: relative;
     margin: auto;
     border: 2px solid black;
+    margin-top:20px;
+    background-color: white;
+    background-size:cover;
+}
+button {
+    position: absolute;
+    top: 350px;
+    width: 25px;
+    height: 70px;
+    font: 12pt arial,tahoma,sans-serif;
+    text-align: center;
+}
+.left {
+    left:5px;
+}
+.right {
+    right:5px;
 }
