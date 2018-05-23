@@ -1,8 +1,17 @@
 var slider = {
-    slides:['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg'],
+    slides:[
+        {type: 'image', src:'img/1.jpg'},
+        {type: 'image', src:'img/2.jpg'},
+        {type: 'image', src:'img/3.jpg'},
+        {type: 'image', src:'img/4.jpg'},
+        {type: 'image', src:'img/5.jpg'},
+        {type: 'image', src:'img/6.jpg'},
+        {type: 'image', src:'img/7.jpg'},
+        {type: 'image', src:'img/8.jpg'}
+    ],
     frame:0,
-    set: function(image) { // установка нужного фона слайдеру
-        document.getElementById("slider_show").style.backgroundImage = "url("+"img/"+image+")";
+    set: function(image) {
+        document.getElementById("slider_show").style.backgroundImage = "url("+image+")";
     },
     init: function() {
         this.set(this.slides[this.frame]);
